@@ -9,7 +9,7 @@ if [ "$1" == "devnet" ]; then
     CLAIM_LOG_FILE="ore_devnet_claim.log"
 elif [ "$1" == "mainnet" ]; then
     ORE_EXEC="./ore_mainnet"
-    RPC_URL="https://rpc.hellomoon.io/54a72008-a842-4ab2-baa5-31d4d9d3b7bd"
+    RPC_URL="https://global.rpc.hellomoon.io/54a72008-a842-4ab2-baa5-31d4d9d3b7bd"
     LOG_FILE="ore_mainnet.log"
     CLAIM_LOG_FILE="ore_mainnet_claim.log"
 else
