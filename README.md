@@ -1,18 +1,12 @@
+Antes, crie sua conta no Digital Ocean: https://m.do.co/c/de0597bfc277
+Crie um droplet.
+Acessa a consola / terminal e execute os seguintes comandos.
+
 # Instalando em um novo VPS (servidor)
 
-#### Baixa o arquivo da gangue
+#### Baixa os arquivos necessários.
 ```
-wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh
-```
-
-#### Muda permissões
-```
-chmod -x gangue.sh
-```
-
-#### Baixa todos os arquivos necessários
-```
-sh gangue.sh
+wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && sh gangue.sh
 ```
 
 #### Edita a privatekey importada da Solflare
@@ -57,19 +51,10 @@ Paramos a mineracao
 ./stop_ore.sh
 ```
 
-Apagamos a versao existente 
+Atualizamos ore_mainnet
 ```
-rm ore_mainnet
-```
+rm ore_mainnet && wget -O ore_mainnet https://github.com/formigapop/ore/releases/download/ore-cli-1.1.1/ore_mainnet && chmod +x ore_mainnet
 
-Baixamos a nova versao
-```
-wget -O ore_mainnet https://github.com/formigapop/ore/releases/download/ore-cli-1.1.1/ore_mainnet
-```
-
-Mudamos permissoes
-```
-chmod +x ore_mainnet
 ```
 
 Conferimos a versao
