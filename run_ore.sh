@@ -9,7 +9,7 @@ if [ "$1" == "devnet" ]; then
     CLAIM_LOG_FILE="ore_devnet_claim.log"
 elif [ "$1" == "mainnet" ]; then
     ORE_EXEC="./ore_mainnet"
-    RPC_URL="https://api.mainnet-beta.solana.com"
+    RPC_URL="https://solana-mainnet.g.alchemy.com/v2/u45Sy_Y7YTFzmYmbGmGgUE0EzLUhYRfe"
     LOG_FILE="ore_mainnet.log"
     CLAIM_LOG_FILE="ore_mainnet_claim.log"
 else
