@@ -25,13 +25,11 @@ ENTER #Para confirmar
 
 #### Tudo certo! Vamos rodar? Use qualquer um, segundo a necessidade
 ```
-./run_ore.sh devnet
 ./run_ore.sh mainnet
 ```
 
 #### Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
 ```
-tail -f ore_devnet.log
 tail -f ore_mainnet.log
 ```
 pra sair dessa visualização, CTRL C
