@@ -1,6 +1,7 @@
-Antes, crie sua conta no Digital Ocean: https://m.do.co/c/de0597bfc277
-Crie um droplet.
-Acessa a consola / terminal e execute os seguintes comandos.
+- Antes, crie sua conta no Digital Ocean: https://m.do.co/c/de0597bfc277
+- Crie um droplet.
+- Acessa a consola / terminal e execute os seguintes comandos.
+Video tutorial: 
 
 # Instalando em um novo VPS (servidor)
 
