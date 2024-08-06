@@ -21,7 +21,7 @@ fi
 KEYPAIR_PATH="./id.json"
 
 # Start the ore process in the background
-nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee 100000 --buffer-time 2 > $LOG_FILE 2>&1 &
+nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee 500000 --buffer-time 2 > $LOG_FILE 2>&1 &
 
 # Get the PID of the ore process
 echo $! > ore.pid
