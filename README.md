@@ -48,7 +48,7 @@ pra sair dessa visualização, CTRL C
 
 ---
 
-# Atualizando a versão do ore_mainnet (ore-cli)
+# Atualizando a versão do ore_mainnet (ore-cli) OPCIONAL, somente se houver atualização do cli. O codigo anterior já tem a versão 1.1.1
 
 Paramos a mineracao 
 ```
