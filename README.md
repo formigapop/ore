@@ -36,9 +36,10 @@ ENTER #Para confirmar
 
 #### Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
 ```
-tail ore_devnet.log
-tail ore_mainnet.log
+tail -f ore_devnet.log
+tail -f ore_mainnet.log
 ```
+pra sair dessa visualização, CTRL C
 
 #### Para parar a mineração
 ```
