@@ -51,16 +51,27 @@ tail ore_mainnet.log
 
 # Atualizando a versão do ore_mainnet (ore-cli)
 
+Paramos a mineracao 
+```
+./stop_ore.sh
+```
+
+Apagamos a versao existente 
 ```
 rm ore_mainnet
 ```
 
-```
-chmod +x ore_mainnet
-```
-
+Baixamos a nova versao
 ```
 wget -O ore_mainnet https://github.com/formigapop/ore/releases/download/ore-cli-1.1.1/ore_mainnet
 ```
 
+Mudamos permissoes
+```
+chmod +x ore_mainnet
+```
 
+Rodamos a mineracao, como na seção anterior
+```
+./run_ore.sh mainnet
+```
