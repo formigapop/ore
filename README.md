@@ -1,7 +1,7 @@
 - Antes, crie sua conta no Digital Ocean: https://m.do.co/c/de0597bfc277
 - Crie um droplet.
 - Acessa a consola / terminal e execute os seguintes comandos.
-Video tutorial: 
+Video tutorial: https://www.tella.tv/video/mineracao-de-ore-escalavel-5f5h ✨
 
 # Instalando em um novo VPS (servidor)
 
