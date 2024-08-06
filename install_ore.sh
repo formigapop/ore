@@ -2,7 +2,7 @@
 
 # Define URLs for the files to be downloaded
 DEVNET_URL="https://github.com/formigapop/ore/releases/download/ubuntu/ore_devnet"
-MAINNET_URL="https://github.com/formigapop/ore/releases/download/ubuntu/ore_mainnet"
+MAINNET_URL="https://github.com/formigapop/ore/releases/download/ore-cli-1.1.1/ore_mainnet"
 
 # Define the destination directory
 DEST_DIR="."
