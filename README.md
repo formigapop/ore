@@ -39,6 +39,11 @@ pra sair dessa visualização, CTRL C
 ./stop_ore.sh
 ```
 
+#### Para resgatar
+```
+./ore_mainnet --rpc https://solana-mainnet.g.alchemy.com/v2/hSEMDRahvlURIV6-sMCnGchkl2jt1Z5o --keypair id.json claim --priority-fee 4000
+```
+
 #### Para resgatar o minerado acesse a versão web e resgate pelo site.
 
 ---
