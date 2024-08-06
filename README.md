@@ -71,6 +71,12 @@ Mudamos permissoes
 chmod +x ore_mainnet
 ```
 
+Conferimos a versao
+```
+./ore_mainnet -V
+```
+Precisa aparecer 1.1.1 ✅
+
 Rodamos a mineracao, como na seção anterior
 ```
 ./run_ore.sh mainnet
