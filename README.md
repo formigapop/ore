@@ -10,7 +10,7 @@ Video tutorial:
 wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && sh gangue.sh
 ```
 
-#### Edita a privatekey importada da Solflare
+#### Vamos editar a privatekey importada da Solflare
 ```
 nano id.json
 ```
