@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./run_ore.sh [--rpc <rpc_url>] [--priority-fee <fee>] [--threads <num_threads>]
+# Usage: ./run_ore.sh [--rpc <rpc_url>] [--priority-fee <fee>] [--cores <num_cores>]
 
 # Default values
 RPC_URL="https://api.mainnet-beta.solana.com"
@@ -18,7 +18,7 @@ while [[ $# -gt 0 ]]; do
             PRIORITY_FEE=$2
             shift 2
             ;;
-        --threads)
+        --cores)
             CORES="--cores $2"
             shift 2
             ;;
