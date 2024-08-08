@@ -23,18 +23,22 @@ Y #Para salvar
 ENTER #Para confirmar
 ```
 
-#### 4️⃣ Tudo certo! Vamos rodar?
-Rodamos a mineração. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
+#### 4️⃣ Tudo certo! Vamos rodar? Aqui temos 3 opções.
+1. Fácil e simples. Rodamos a mineração. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
 ```
 ./run_ore.sh
 ```
 
-Ou, se queremos customizar, aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32
+2. Customizado. Aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32
 ```
 ./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 1 --priority-fee 4000
 ```
 Substitua os valores após --rpc, --threads, e --priority-fee segundo a sua preferencia.
 
+3. Para ver em tempo real.
+```
+./ore_mainnet --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 4000 mine --threads 32 --buffer-time 2
+```
 
 #### 5️⃣ Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
 ```
@@ -63,7 +67,7 @@ pra sair dessa visualização, CTRL C
 rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
 ```
 
-#### C Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
+#### C Rodamos a mineracao. 
 ```
 ./run_ore.sh
 ```
