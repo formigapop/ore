@@ -5,17 +5,17 @@
 
 # Instalando em um novo VPS (servidor)  ✨
 
-#### Baixa os arquivos necessários.
+#### 1️⃣ Baixa os arquivos necessários.
 ```
 wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && sh gangue.sh
 ```
 
-#### Vamos editar a privatekey importada da Solflare
+#### 2️⃣ Vamos editar a privatekey importada da Solflare
 ```
 nano id.json
 ```
 
-#### Para copiar e colar a privatekey,  vá no solflare, exporte a privatekey e copie. Depois aperte estas teclas para salvar no servidor
+#### 3️⃣ Para copiar e colar a privatekey,  vá no solflare, exporte a privatekey e copie. Depois aperte estas teclas para salvar no servidor
 ```
 CTRL SHIFT V #Para colar na consola
 CTRL X #Para fechar o arquivo
@@ -23,7 +23,7 @@ Y #Para salvar
 ENTER #Para confirmar
 ```
 
-#### Tudo certo! Vamos rodar?
+#### 4️⃣ Tudo certo! Vamos rodar?
 Rodamos a mineração. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
 ```
 ./run_ore.sh
@@ -36,13 +36,13 @@ Ou, se queremos customizar, aqui um exemplo.
 Substitua os valores após --rpc, --threads, e --priority-fee segundo a sua preferencia.
 
 
-#### Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
+#### 5️⃣ Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
 ```
 tail -f ore_mainnet.log
 ```
 pra sair dessa visualização, CTRL C
 
-#### Para parar a mineração
+#### 6️⃣ Para parar a mineração
 ```
 ./stop_ore.sh
 ```
@@ -53,13 +53,13 @@ pra sair dessa visualização, CTRL C
 
 # Atualizando todos os arquivos (exceto a carteira). ✨
 
-Paramos a mineração e baixamos novamente todos os arquivos
+#### 🅰️ Paramos a mineração e baixamos novamente todos os arquivos
 ```
 ./stop_ore.sh && rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && sh gangue.sh
 
 ```
 
-Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
+#### 🅱️ Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
 ```
 ./run_ore.sh
 ```
