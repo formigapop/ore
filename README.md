@@ -68,7 +68,7 @@ rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangu
 ```
 
 #### C Rodamos a mineracao. 
-Use um dos 3 comandos para rodar da seção anterior. [https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh ](https://github.com/formigapop/ore/blob/main/README.md#4%EF%B8%8F%E2%83%A3-tudo-certo-vamos-rodar-aqui-temos-3-op%C3%A7%C3%B5es)
+Use um dos comandos para rodar da seção anterior, que [está no passo 3️⃣](https://github.com/formigapop/ore/blob/main/README.md#4%EF%B8%8F%E2%83%A3-tudo-certo-vamos-rodar-aqui-temos-3-op%C3%A7%C3%B5es).
 
 #### Comandos adicionais para tarefas diversas.
 
