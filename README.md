@@ -81,11 +81,15 @@ Precisa aparecer 1.1.1 ✅
 
 Resgatar ORE minerado
 ```
-./ore_mainnet --rpc https://solana-mainnet.g.alchemy.com/v2/hSEMDRahvlURIV6-sMCnGchkl2jt1Z5o --keypair id.json claim --priority-fee 4000
+./ore_mainnet claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json--priority-fee 4000 
 ```
 
 Ver os premios segundo nivel de dificuldade
 ```
-./ore_mainnet --rpc https://solana-mainnet.g.alchemy.com/v2/hSEMDRahvlURIV6-sMCnGchkl2jt1Z5o --keypair id.json claim --priority-fee 4000
+./ore_mainnet rewards --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000
 ```
 
+Ver quanto de ore tem
+```
+./ore_mainnet balance --rpc https://api.mainnet-beta.solana.com/ --keypair id.json
+```
