@@ -7,7 +7,7 @@
 
 #### 1️⃣ Baixa os arquivos necessários.
 ```
-wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && sh gangue.sh
+wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
 ```
 
 #### 2️⃣ Vamos editar a privatekey importada da Solflare
