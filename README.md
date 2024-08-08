@@ -68,16 +68,7 @@ rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangu
 ```
 
 #### C Rodamos a mineracao. 
-```
-./run_ore.sh
-```
-
-Ou, se queremos customizar, aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32
-```
-./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 32 --priority-fee 4000
-```
-Substitua os valores apos --rpc, --threads, e --priority-fee segundo o gosto pessoal.
-
+Use um dos 3 comandos para rodar da seção anterior. [https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh ](https://github.com/formigapop/ore/blob/main/README.md#4%EF%B8%8F%E2%83%A3-tudo-certo-vamos-rodar-aqui-temos-3-op%C3%A7%C3%B5es)
 
 #### Comandos adicionais para tarefas diversas.
 
