@@ -1,27 +1,44 @@
 #!/bin/bash
 
-# Usage: ./run_ore.sh [devnet|mainnet]
+# Usage: ./run_ore.sh [--rpc <rpc_url>] [--priority-fee <fee>] [--threads <num_threads>]
 
-if [ "$1" == "devnet" ]; then
-    ORE_EXEC="./ore_devnet"
-    RPC_URL="https://api.devnet.solana.com"
-    LOG_FILE="ore_devnet.log"
-    CLAIM_LOG_FILE="ore_devnet_claim.log"
-elif [ "$1" == "mainnet" ]; then
-    ORE_EXEC="./ore_mainnet"
-    RPC_URL="https://solana-mainnet.g.alchemy.com/v2/u45Sy_Y7YTFzmYmbGmGgUE0EzLUhYRfe"
-    LOG_FILE="ore_mainnet.log"
-    CLAIM_LOG_FILE="ore_mainnet_claim.log"
-else
-    echo "Usage: $0 [devnet|mainnet]"
-    exit 1
-fi
+# Default values
+RPC_URL="https://api.mainnet-beta.solana.com"
+PRIORITY_FEE=4000
+THREADS=""
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --rpc)
+            RPC_URL=$2
+            shift 2
+            ;;
+        --priority-fee)
+            PRIORITY_FEE=$2
+            shift 2
+            ;;
+        --threads)
+            THREADS="--threads $2"
+            shift 2
+            ;;
+        *)
+            echo "Usage: $0 [--rpc <rpc_url>] [--priority-fee <fee>] [--threads <num_threads>]"
+            exit 1
+            ;;
+    esac
+done
 
 # Path to keypair file
 KEYPAIR_PATH="./id.json"
 
+# Variables
+ORE_EXEC="./ore_mainnet"
+LOG_FILE="ore_mainnet.log"
+CLAIM_LOG_FILE="ore_mainnet_claim.log"
+
 # Start the ore process in the background
-nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee 4000 --buffer-time 2 > $LOG_FILE 2>&1 &
+nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee $PRIORITY_FEE --buffer-time 2 $THREADS > $LOG_FILE 2>&1 &
 
 # Get the PID of the ore process
 echo $! > ore.pid
