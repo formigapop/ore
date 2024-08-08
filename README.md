@@ -29,15 +29,15 @@ ENTER #Para confirmar
 ./run_ore.sh
 ```
 
-2. Customizado. Aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32
+2. Customizado. Aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32 cores
 ```
-./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 1 --priority-fee 4000
+./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --cores 1 --priority-fee 4000
 ```
-Substitua os valores após --rpc, --threads, e --priority-fee segundo a sua preferencia.
+Substitua os valores após --rpc, --cores, e --priority-fee segundo a sua preferencia.
 
 3. Para ver em tempo real.
 ```
-./ore_mainnet --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 4000 mine --threads 32 --buffer-time 2
+./ore_mainnet --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 4000 mine --cores 32 --buffer-time 2
 ```
 
 #### 5️⃣ Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
