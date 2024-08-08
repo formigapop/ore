@@ -24,7 +24,7 @@ ENTER #Para confirmar
 ```
 
 #### Tudo certo! Vamos rodar?
-Rodamos a mineração. Por default vai considerar o RPC Alchemy da Gangue, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
+Rodamos a mineração. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
 ```
 ./run_ore.sh
 ```
@@ -51,7 +51,7 @@ pra sair dessa visualização, CTRL C
 
 ---
 
-# Atualizando todos os arquivos (exceto a carteira id.json). ✨
+# Atualizando todos os arquivos (exceto a carteira). ✨
 
 Paramos a mineração e baixamos novamente todos os arquivos
 ```
@@ -59,7 +59,7 @@ Paramos a mineração e baixamos novamente todos os arquivos
 
 ```
 
-Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC Alchemy da Gangue, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
+Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
 ```
 ./run_ore.sh
 ```
