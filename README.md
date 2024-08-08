@@ -29,9 +29,9 @@ Rodamos a mineração. Por default vai considerar o RPC da Solana Foundation, 1 
 ./run_ore.sh
 ```
 
-Ou, se queremos customizar, aqui um exemplo.
+Ou, se queremos customizar, aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32
 ```
-./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 32 --priority-fee 8000
+./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 1 --priority-fee 4000
 ```
 Substitua os valores após --rpc, --threads, e --priority-fee segundo a sua preferencia.
 
@@ -53,19 +53,24 @@ pra sair dessa visualização, CTRL C
 
 # Atualizando todos os arquivos (exceto a carteira). ✨
 
-#### 🅰️ Paramos a mineração e baixamos novamente todos os arquivos
+#### 🅰️ Paramos a mineração
 ```
-./stop_ore.sh && rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
+./stop_ore.sh
 ```
 
-#### 🅱️ Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
+#### 🅱️ Baixamos novamente todos os arquivos
+```
+rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
+```
+
+#### C Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
 ```
 ./run_ore.sh
 ```
 
-Ou, se queremos customizar, aqui um exemplo.
+Ou, se queremos customizar, aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32
 ```
-./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 32 --priority-fee 8000
+./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --threads 32 --priority-fee 4000
 ```
 Substitua os valores apos --rpc, --threads, e --priority-fee segundo o gosto pessoal.
 
