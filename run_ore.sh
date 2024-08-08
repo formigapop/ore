@@ -5,7 +5,7 @@
 # Default values
 RPC_URL="https://api.mainnet-beta.solana.com"
 PRIORITY_FEE=4000
-THREADS=""
+CORES=""
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -19,11 +19,11 @@ while [[ $# -gt 0 ]]; do
             shift 2
             ;;
         --threads)
-            THREADS="--threads $2"
+            CORES="--cores $2"
             shift 2
             ;;
         *)
-            echo "Usage: $0 [--rpc <rpc_url>] [--priority-fee <fee>] [--threads <num_threads>]"
+            echo "Usage: $0 [--rpc <rpc_url>] [--priority-fee <fee>] [--cores <num_cores>]"
             exit 1
             ;;
     esac
@@ -38,7 +38,7 @@ LOG_FILE="ore_mainnet.log"
 CLAIM_LOG_FILE="ore_mainnet_claim.log"
 
 # Start the ore process in the background
-nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee $PRIORITY_FEE --buffer-time 2 $THREADS > $LOG_FILE 2>&1 &
+nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee $PRIORITY_FEE --buffer-time 2 $CORES > $LOG_FILE 2>&1 &
 
 # Get the PID of the ore process
 echo $! > ore.pid
