@@ -55,8 +55,7 @@ pra sair dessa visualização, CTRL C
 
 #### 🅰️ Paramos a mineração e baixamos novamente todos os arquivos
 ```
-./stop_ore.sh && rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && sh gangue.sh
-
+./stop_ore.sh && rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
 ```
 
 #### 🅱️ Rodamos a mineracao, como na seção anterior. Por default vai considerar o RPC da Solana Foundation, 1 thread (cpus), e priority-fee 4000 (0.000004 SOL de taxa)
