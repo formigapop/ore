@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define URLs for the files to be downloaded
-MAINNET_URL="https://github.com/formigapop/ore/releases/download/ore-cli-2.1.0/ore_mainnet"
+MAINNET_URL="https://github.com/formigapop/ore/releases/download/ore-cli-2.2/ore_mainnet"
 
 # Define the destination directory
 DEST_DIR="."
