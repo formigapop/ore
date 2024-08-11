@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Usage: ./run_ore.sh [--rpc <rpc_url>] [--priority-fee <fee>] [--cores <num_cores>]
+# Usage: ./run_ore.sh [--rpc <rpc_url>] [--priority-fee <fee>] [--cores <num_cores>] [--jito]
 
 # Default values
 RPC_URL="https://api.mainnet-beta.solana.com"
@@ -21,7 +20,7 @@ while [[ $# -gt 0 ]]; do
             ;;
         --jito)
             JITO="--jito"
-            shift 2
+            shift 1
             ;;
         --cores)
             CORES="--cores $2"
