@@ -80,7 +80,7 @@ Precisa aparecer 1.1.1 ✅
 
 Resgatar ORE minerado
 ```
-./ore_mainnet claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json--priority-fee 4000 
+./ore_mainnet claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000 
 ```
 
 Ver os premios segundo nivel de dificuldade
