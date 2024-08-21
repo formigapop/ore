@@ -29,9 +29,9 @@ fi
 
 # Download the files
 echo "Downloading ore_mainnet..."
-wget -O $DEST_DIR/ore $COALORE_URL
+wget -O $DEST_DIR/ore $ORE_URL
 wget -O $DEST_DIR/coal $COAL_URL
-wget -O $DEST_DIR/coalore $ORE_URL
+wget -O $DEST_DIR/coalore $COALORE_URL
 
 # Create an empty id.json file
 echo "Creating id.json..."
