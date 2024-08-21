@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define URLs for the files to be downloaded
-COALORE_URL="https://github.com/formigapop/ore/releases/download/coalore-2.4/coalore"
+COALORE_URL="https://github.com/formigapop/ore/releases/download/coalore-2.4.1/coalore"
 COAL_URL="https://github.com/formigapop/ore/releases/download/coal-2.3/coal"
 ORE_URL="https://github.com/formigapop/ore/releases/download/ore-cli-2.3/ore_mainnet"
 
