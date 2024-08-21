@@ -5,7 +5,7 @@
 
 # Instalando em um novo VPS (servidor)  ✨
 
-#### 1️⃣ Baixa os arquivos necessários.
+#### 1️⃣ Baixa os arquivos necessários para minerar ORE + COAL ao mesmo tempo
 ```
 wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
 ```
@@ -37,12 +37,12 @@ Substitua os valores após --rpc, --cores, e --priority-fee segundo a sua prefer
 
 3. Para ver em tempo real.
 ```
-./ore_mainnet --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 4 mine --cores 32 --buffer-time 2 --jito
+./coalore mine --merged ore --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 4 --cores 32 --buffer-time 2 --jito
 ```
 
 #### 5️⃣ Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
 ```
-tail -f ore_mainnet.log
+tail -f coalore.log
 ```
 pra sair dessa visualização, CTRL C
 
@@ -57,14 +57,15 @@ pra sair dessa visualização, CTRL C
 
 # Atualizando todos os arquivos (exceto a carteira). ✨
 
-#### 🅰️ Paramos a mineração
+#### 🅱️ Atualizamos os arquivos.
 ```
-./stop_ore.sh
+([ -f gangue.sh ] && rm gangue.sh); wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh && bash stop_ore.sh
 ```
 
-#### 🅱️ Baixamos novamente todos os arquivos
+#### 🅱️ Fechamos contas do ORE e COAL, se temos minerado anteriormente. Aperte Y e enter, para confirmar. Se der erro, significa que a conta já foi fechada.
 ```
-rm gangue.sh && wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh
+./coal close --keypair id.json
+./ore close --keypair id.json
 ```
 
 #### C Rodamos a mineracao. 
@@ -74,21 +75,21 @@ Use um dos comandos para rodar da seção anterior, que [está no passo 4️⃣]
 
 Conferir a versao do nosso minerador
 ```
-./ore_mainnet -V
+./coalore -V
 ```
-Precisa aparecer 1.1.1 ✅
+Precisa aparecer 2.4 ✅
 
 Resgatar ORE minerado
 ```
-./ore_mainnet claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000 
+./coalore claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000 
 ```
 
 Ver os premios segundo nivel de dificuldade
 ```
-./ore_mainnet rewards --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000
+./coalore rewards --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000
 ```
 
 Ver quanto de ore tem
 ```
-./ore_mainnet balance --rpc https://api.mainnet-beta.solana.com/ --keypair id.json
+./coalore balance --rpc https://api.mainnet-beta.solana.com/ --keypair id.json
 ```
