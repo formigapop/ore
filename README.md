@@ -31,7 +31,7 @@ ENTER #Para confirmar
 
 2. Customizado. Aqui um exemplo. Se quer garantir o maximo de CPUs, deixe com 32 cores
 ```
-./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --cores 1 --priority-fee 4000 --jito
+./run_ore.sh --rpc https://api.mainnet-beta.solana.com/ --cores 1 --priority-fee 1 --jito
 ```
 Substitua os valores após --rpc, --cores, e --priority-fee segundo a sua preferencia.
 
