@@ -1,4 +1,6 @@
 #!/bin/bash
 
 # Stop the ore process
-kill $(cat ore.pid)
+kill -f "coalore"
+kill -f "coal"
+kill -f "ore"
