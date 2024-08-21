@@ -37,7 +37,7 @@ Substitua os valores após --rpc, --cores, e --priority-fee segundo a sua prefer
 
 3. Para ver em tempo real.
 ```
-./coalore mine --merged ore --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 4 --cores 32 --buffer-time 2 --jito
+./coalore mine --merged ore --rpc https://api.mainnet-beta.solana.com --keypair id.json --priority-fee 1 --cores 32 --jito
 ```
 
 #### 5️⃣ Para conferir se está minerando. Execute um destes codigos, segundo a necessidade. O valor que aparece em stake, é o minerado.
