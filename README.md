@@ -62,9 +62,9 @@ pra sair dessa visualização, CTRL C
 ([ -f gangue.sh ] && rm gangue.sh); wget https://raw.githubusercontent.com/formigapop/ore/main/gangue.sh -O gangue.sh && chmod +x gangue.sh && bash gangue.sh && bash stop_ore.sh
 ```
 
-#### 🅱️ Fechamos contas do ORE e COAL, se temos minerado anteriormente. Aperte Y e enter, para confirmar. Se der erro, significa que a conta já foi fechada.
+#### 🅱️ Fechamos contas do ORE e COAL, se temos minerado anteriormente. 🔴 Aperte Y e enter, para confirmar. São 2 vezes. Se der erro, significa que a conta já foi fechada.
 ```
-./coal close --keypair id.json
+./coalore close --keypair id.json
 ./ore close --keypair id.json
 ```
 
@@ -79,17 +79,20 @@ Conferir a versao do nosso minerador
 ```
 Precisa aparecer 2.4 ✅
 
-Resgatar ORE minerado
+Resgatar COAL ou ORE minerado
 ```
-./coalore claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000 
+./coalore claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000
+./ore claim --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000 
 ```
 
 Ver os premios segundo nivel de dificuldade
 ```
-./coalore rewards --rpc https://api.mainnet-beta.solana.com/ --keypair id.json --priority-fee 4000
+./coalore rewards
+./ore rewards
 ```
 
 Ver quanto de ore tem
 ```
 ./coalore balance --rpc https://api.mainnet-beta.solana.com/ --keypair id.json
+./ore balance --rpc https://api.mainnet-beta.solana.com/ --keypair id.json
 ```
