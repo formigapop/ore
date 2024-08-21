@@ -3,7 +3,7 @@
 
 # Default values
 RPC_URL="https://api.mainnet-beta.solana.com"
-PRIORITY_FEE=4000
+PRIORITY_FEE=4
 CORES=""
 JITO=""
 
@@ -37,12 +37,11 @@ done
 KEYPAIR_PATH="./id.json"
 
 # Variables
-ORE_EXEC="./ore_mainnet"
-LOG_FILE="ore_mainnet.log"
-CLAIM_LOG_FILE="ore_mainnet_claim.log"
+ORE_EXEC="./coalore"
+LOG_FILE="coalore.log"
 
 # Start the ore process in the background
-nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --priority-fee $PRIORITY_FEE --buffer-time 2 $CORES $JITO > $LOG_FILE 2>&1 &
+nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --merged ore --priority-fee $PRIORITY_FEE $CORES $JITO > $LOG_FILE 2>&1 &
 
 # Get the PID of the ore process
-echo $! > ore.pid
+echo $! > coalore.pid
