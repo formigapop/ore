@@ -43,5 +43,5 @@ LOG_FILE="coalore.log"
 # Start the ore process in the background
 nohup $ORE_EXEC --rpc $RPC_URL --keypair $KEYPAIR_PATH mine --merged ore --priority-fee $PRIORITY_FEE $CORES $JITO > $LOG_FILE 2>&1 &
 
-# Get the PID of the ore process
-echo $! > coalore.pid
+echo "ORE + COAL mining process started."
+echo "Logs are being saved to $LOG_FILE"
