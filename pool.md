@@ -9,11 +9,11 @@ wget https://github.com/formigapop/ore/releases/download/coal-pool-1.3.0/coal_po
 ./coal_pool --keypair id.json --url coalpool.xyz signup
 ```
 4. Comece a minerar. Não paga taxa, não gasta RPC. 🥳
-- Para ver em tempor real
+- Para ver em tempor real. Se voce fechar a janela, a mineração pode parar. Não use este comando se voce quer deixar ele rodando.
 ```
 ./coal_pool --keypair id.json --url coalpool.xyz mine --cores 32
 ```
-- Para deixar rodando e fechar a janela
+- Para deixar rodando e poder fechar a janela sem problemas.
 ```
 nohup ./coal_pool --keypair id.json --url coalpool.xyz mine --cores 32 > pool.log 2>&1 &
 ```
