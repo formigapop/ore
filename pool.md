@@ -2,7 +2,7 @@
 
 1. Baixe o minerador
 ```
-wget https://github.com/formigapop/ore/releases/download/coal-pool-1.3.0/coal_pool && chmod +x coal_pool
+([ -f coal_pool ] && rm coal_pool); wget https://github.com/formigapop/ore/releases/download/coal-pool-1.3.0/coal_pool && chmod +x coal_pool
 ```
 3. Crie uma conta no minerador (Vai cobrar 0.001 SOL). Unico custo que terá. Lembrando que deve ter a private key da carteira no arquivo id.json
 ```
